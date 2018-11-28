@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To do list</title>
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto" rel="stylesheet">
+        <!-- JavaScript -->
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+
+    <body class="screen">   
+        <h1>To-do</h1>
+        <form onsubmit="add()">
+            <input id="input" autocomplete="off" placeholder="Ką reikia atlikti?">
+        </form>
+        <span class="heading">Užduotys</span> <label class="rateBox" id="task"> - 0/0 (0%)</label>
+        <div id="todoList"></div>
+        
+        <br>
+        <span class="heading">Atliktos</span> <label class="rateBox" id="over"> - 0/0 (0%)</label>
+        <div id="doneList"></div>
+    </body>
+
+</html> 
