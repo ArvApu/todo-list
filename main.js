@@ -95,7 +95,8 @@ function getToDo(list) {
         var date = list[i].date;
         var labelDate = '<label class="itemLabelDate">' + date + '</label><br>';
         var labelText = '<label class="itemLabelText">' + text + '</label>';
-        html += '<div class="itemToDo" onClick="remove(id)" id="'+ id +'">' + labelDate + labelText +'</div>';
+        var checkmark = '<span onClick="remove(id)"></span>';
+        html += '<div class="itemToDo" id="'+ id +'">' + labelDate + labelText + checkmark + '</div>';
     }
     html += '</ul>';
     return html;
